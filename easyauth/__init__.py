@@ -69,6 +69,7 @@ class oauth:
             #build token url
             param_string = []
             param_string.append('grant_type=authorization_code')
+            param_string.append('response_type=code')
             param_string.append('code={}'.format(code))
             param_string.append('client_id={}'.format(self.CLIENT_ID))
             param_string.append('client_secret={}'.format(self.CLIENT_SECRET))
